@@ -27,13 +27,47 @@
     </div>
 
 
-  <div class="bar-container">
-      <div class=" home-bar" style="background-image: url('src/home.jpeg');">
+    <div class="home-bar" style="
+    background-image: url('src/home.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    filter: brightness(75%);
+    transition: filter 0.5s ease-in-out;">
 
+      <div style="
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;">
+        <h1 class="fw-bold" style="font-size: 5rem; margin-bottom: 10px;">Welcome to My Space</h1>
+        <p class="lead" style="font-size: 0.7rem;">A little corner of the web where creativity meets technology</p>
       </div>
+    </div>
 
 
-      <div class="bar2">
+    <style>
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+
+
+
+
+    <div class="bar2">
         <div class="container col-xxl-8 px-4 py-5">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
