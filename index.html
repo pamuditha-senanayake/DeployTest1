@@ -12,23 +12,31 @@
 <div class="main">
   <div class="navi">
     <div class="container">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <header class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
           <span class="fs-4">Pamuditha Senanayake</span>
         </a>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Zed</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Quick links</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Notes</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        </ul>
+        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav nav-pills ms-auto">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Zed</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Quick links</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Notes</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </div>
       </header>
     </div>
+  </div>
 
-    <div class="bar-container">
+
+  <div class="bar-container">
       <div class=" home-bar" style="background-image: url('src/home.jpg');">
 
       </div>
